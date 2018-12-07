@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/h_match_parent"
+    android:padding="@dimen/d_10dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/d_100dp"
+        android:layout_height="@dimen/d_80dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/temp_cai" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/text12colorBlack"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="Braised beef with brown sauce" />
+
+        <com.xson.common.widget.FormatTextView
+            android:id="@+id/voter_num_tv"
+            style="@style/text12color7e7e7e"
+            android:layout_alignParentBottom="true"
+            app:defaultValue="8"
+            app:formatText="@string/voter" />
+
+        <ImageView
+            android:id="@+id/voter_iv"
+            style="@style/text"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_voter_on" />
+
+    </RelativeLayout>
+
+</LinearLayout>

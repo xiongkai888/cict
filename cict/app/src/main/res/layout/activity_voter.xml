@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.cict.ui.home.activity.VoterActivity">
+
+    <include layout="@layout/include_tablayout_text_view" />
+
+    <TextView
+        android:id="@+id/line_tv"
+        style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--<com.lanmei.cict.view.VerticalTabSubLayout-->
+            <!--android:id="@+id/tablayout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--app:indicator_color="@color/color398de3"-->
+            <!--app:indicator_gravity="left"-->
+            <!--app:tab_height="@dimen/d_50dp"-->
+            <!--app:tab_mode="scrollable" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:background="@color/colorF8F8F8"
+            android:layout_height="match_parent"
+            style="@style/text_weight"/>
+
+        <TextView
+            style="@style/line_v1dp_divider" />
+
+        <LinearLayout
+            style="@style/v_all_match_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+
+            <LinearLayout style="@style/h_match_parent_no">
+
+                <TextView
+                    android:id="@+id/breakfast_tv"
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="Breakfast"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/lunch_tv"
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="Lunch"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/dinner_tv"
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="Dinner"
+                    android:textSize="@dimen/txt_12sp" />
+
+                <TextView
+                    android:id="@+id/midnight_tv"
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="Midnight"
+                    android:textSize="@dimen/txt_12sp" />
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <TextView
+                android:layout_marginTop="@dimen/d_5dp"
+                android:layout_marginBottom="@dimen/d_5dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/d_3dp"
+                android:paddingTop="@dimen/d_2dp"
+                android:paddingRight="@dimen/d_20dp"
+                android:paddingLeft="@dimen/d_20dp"
+                android:text="Ene:07/12/2018 | Voter:8"
+                android:background="@color/colorF8F8F8"
+                style="@style/text12colorBlack" />
+
+            <include layout="@layout/fragment_single_listview"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

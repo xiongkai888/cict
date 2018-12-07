@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/v_all_match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include layout="@layout/include_banner" />
+
+            <LinearLayout
+                style="@style/v_match_parent_no"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/home_semicircle"
+                android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/vehicle_book_tv"
+                    android:layout_marginTop="@dimen/d_5dp"
+                    style="@style/text12colorBlack"
+                    android:drawablePadding="@dimen/d_2dp"
+                    android:drawableTop="@mipmap/home_1"
+                    android:text="Vehicle Booking" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/h_match_parent_no">
+
+
+                <TextView
+                    android:id="@+id/menu_voting_tv"
+                    style="@style/text12colorBlack"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/d_3dp"
+                    android:drawableTop="@mipmap/home_2"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="Menu Voting" />
+
+                <TextView
+                    style="@style/line_v1dp_divider"/>
+
+                <RelativeLayout
+                    android:id="@+id/talk_to_ceo_rl"
+                    style="@style/text_weight"
+                    android:layout_width="@dimen/d_0dp"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp">
+
+
+                    <TextView
+                        android:id="@+id/talk_to_ceo_tv"
+                        style="@style/text12colorBlack"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/d_3dp"
+                        android:drawableTop="@mipmap/home_3"
+                        android:text="@string/talk_to_ceo" />
+
+                    <TextView
+                       style="@style/text10colorWhite"
+                        android:layout_alignRight="@id/talk_to_ceo_tv"
+                        android:text="1"
+                        android:gravity="center"
+                        android:background="@drawable/shape_have_message_dot" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <LinearLayout
+                style="@style/h_match_parent_no"
+                android:layout_marginBottom="@dimen/d_10dp">
+
+
+                <TextView
+                    android:id="@+id/my_voting_tv"
+                    style="@style/text12colorBlack"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/d_3dp"
+                    android:drawableTop="@mipmap/home_4"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="My Voting" />
+
+
+                <TextView
+                    style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/my_booking_tv"
+                    style="@style/text12colorBlack"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/d_3dp"
+                    android:drawableTop="@mipmap/home_5"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:text="My Booking" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

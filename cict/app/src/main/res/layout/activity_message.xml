@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.cict.ui.home.activity.MessageActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/v_all_match_parent_no">
+
+            <TextView
+                android:id="@+id/type_tv"
+                style="@style/match_parent"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/in_right"
+                android:gravity="center_vertical"
+                android:padding="@dimen/d_10dp"
+                android:text="Type" />
+
+            <TextView
+                style="@style/match_parent"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="Content" />
+
+            <com.lanmei.cict.view.ScrollEditText
+                android:id="@+id/content_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_180dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="Please enter the message content"
+                android:maxLength="600"
+                android:paddingBottom="@dimen/d_5dp"
+                android:paddingRight="@dimen/d_10dp"
+                android:paddingLeft="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_5dp"/>
+
+            <TextView
+                android:id="@+id/content_num_tv"
+                style="@style/match_parent"
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingRight="@dimen/d_10dp"
+                android:paddingBottom="@dimen/d_10dp"
+                android:text="0/600"
+                android:textColor="@color/color999" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:padding="@dimen/d_10dp">
+
+                <com.xson.common.widget.FormatTextView
+                    android:id="@+id/upload_pictures_num_tv"
+                    style="@style/match_parent"
+                    app:defaultValue="0"
+                    app:formatText="@string/upload_pictures" />
+
+
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/snpl_moment_add_photos"
+                    style="@style/WrapWrap"
+                    android:layout_marginTop="@dimen/d_10dp"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="4dp"
+                    app:bga_snpl_itemWidth="0dp"
+                    app:bga_snpl_maxItemCount="9"
+                    app:bga_snpl_otherWhiteSpacing="80dp"
+                    app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                    app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CICT Community Portal</string>
+    <string name="home">Home</string>
+    <string name="manual">Manual</string>
+    <string name="about">About</string>
+    <string name="me">Me</string>
+
+    <string name="developing">in development</string>
+    <string name="talk_to_ceo">Talk To CEO</string>
+
+    <string name="just_now">just now</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="hours_ago">hours before</string>
+    <string name="yesterday">yesterday</string>
+    <string name="day_before_yesterday">the day before yesterday</string>
+    <string name="days_ago">days ago</string>
+    <string name="months_ago">months ago</string>
+    <string name="years_ago">year ago</string>
+    <string name="format_all_time">yyyy-MM-dd HH:mm:ss</string>
+    <string name="format_time_no_second">yyyy-MM-dd HH:mm</string>
+    <string name="format_time_year_month_day">yyyy-MM-dd</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+
+    <string name="input_phone_number">Please enter your mobile phone number</string>
+    <string name="input_password_count">Please enter a 6-18 bit password</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="voter"><![CDATA[Voter : <font color="#FF0000">%s</font>]]></string>
+    <string name="upload_pictures"><![CDATA[Upload pictures <font color="#999999">(%s/3)</font>]]></string>
+    <string name="sub">Sub</string>
+    <string name="set_up">Set Up</string>
+    <string name="num_600">%1$s/600</string>
+</resources>

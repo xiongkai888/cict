@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent_no"
+    android:padding="@dimen/d_10dp">
+
+    <LinearLayout style="@style/h_match_parent_no">
+
+        <TextView
+            android:id="@+id/position_tv"
+            style="@style/text14colorWhite"
+            android:background="@drawable/shape_manual"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/text"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:text="Sign" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/pic_iv"
+        android:src="@mipmap/launch"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/d_35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.cict.ui.home.activity.TalkToCeoActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_by"
+        style="@style/ll_bottom_h">
+
+        <RelativeLayout
+            android:id="@+id/by_rl"
+            style="@style/text_weight">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/by_tv"
+                    style="@style/text"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:drawablePadding="@dimen/d_2dp"
+                    android:drawableRight="@mipmap/o_down"
+                    android:gravity="center_vertical"
+                    android:text="By" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <TextView style="@style/line_v1dp_divider" />
+
+        <RelativeLayout
+            android:id="@+id/time_rl"
+            style="@style/text_weight">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/text"
+                    android:paddingTop="@dimen/d_10dp"
+                    android:paddingBottom="@dimen/d_10dp"
+                    android:drawablePadding="@dimen/d_2dp"
+                    android:drawableRight="@mipmap/o_bothway"
+                    android:gravity="center_vertical"
+                    android:text="Time" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/fragment_single_listview_no"/>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/v_all_match_parent">
+
+
+        <LinearLayout
+            android:background="@color/color398de3"
+            style="@style/v_match_parent_no">
+
+            <TextView
+                android:id="@+id/set_up_sub_tv"
+                android:layout_gravity="right"
+                android:text="@string/set_up"
+                android:layout_margin="@dimen/d_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/pic_iv"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/temp_pic1"
+                android:layout_width="@dimen/d_100dp"
+                android:layout_height="@dimen/d_100dp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Angle"
+                style="@style/text16colorWhite" />
+
+            <TextView
+                android:id="@+id/phone_number_tv"
+                android:layout_gravity="center_horizontal"
+                android:text="13500000000"
+                android:layout_marginBottom="@dimen/d_20dp"
+                android:layout_marginTop="@dimen/d_3dp"
+                style="@style/text12colorWhite" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/h_match_parent_no"
+            android:layout_marginTop="@dimen/d_10dp">
+
+
+            <TextView
+                android:id="@+id/my_information_tv"
+                style="@style/text12colorBlack"
+                android:layout_width="@dimen/d_0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/d_3dp"
+                android:drawableTop="@mipmap/me_1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="My Information" />
+
+            <TextView style="@style/line_v1dp_divider" />
+
+            <TextView
+                android:id="@+id/my_vote_tv"
+                style="@style/text12colorBlack"
+                android:layout_width="@dimen/d_0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/d_3dp"
+                android:drawableTop="@mipmap/me_2"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="My Vote" />
+
+
+        </LinearLayout>
+
+        <TextView style="@style/line_H1dp_divider" />
+
+        <LinearLayout
+            style="@style/h_match_parent_no"
+            android:layout_marginBottom="@dimen/d_10dp">
+
+
+            <TextView
+                android:id="@+id/my_booking_tv"
+                style="@style/text12colorBlack"
+                android:layout_width="@dimen/d_0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/d_3dp"
+                android:drawableTop="@mipmap/me_3"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="My Booking" />
+
+
+            <TextView style="@style/line_v1dp_divider" />
+
+            <TextView
+                android:id="@+id/set_up_tv"
+                style="@style/text12colorBlack"
+                android:layout_width="@dimen/d_0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/d_3dp"
+                android:drawableTop="@mipmap/me_4"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="@string/set_up" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_all_match_parent">
+
+
+            <ImageView
+                style="@style/match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_about" />
+
+
+            <ImageView
+                style="@style/text"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/d_10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/logo" />
+
+
+            <TextView
+                style="@style/text"
+                android:paddingBottom="@dimen/d_10dp"
+                android:paddingLeft="@dimen/d_10dp"
+                android:paddingRight="@dimen/d_10dp"
+                android:text="       Colombo International Container Terminals Ltd., (CICT) is a joint venture Company between China Merchants Port Holdings Company Limited. (CMPH) (formerly known as) China Merchants Holdings (International) Company Limited (CMHI) a listed blue chip company in the Hong Kong stock exchange and the Sri Lanka Ports Authority (SLPA). Under a 35 year Build Operate and Transfer Agreement with SLPA, Colombo’s third container terminal with a 2.4 million teus capacity was constructed in the Port of Colombo, Sri Lanka, under the Colombo South Harbour expansion project. CMPH holds 85% of the partnership whilst the balance 15% is being held by SLPA.
+
+      \n       We are located adjacent to the Port of Colombo within a new water basin having a two lane access channel with a 20 metre depth and 18m water depth alongside the berths. Colombo’s new sea port terminal have a seamless land connectivity to the existing terminals whilst providing immediate connections to transhipment containers between terminals. We are equipped with the latest design ship to shore quay cranes with a 70 metre outreach, supported with cutting edge IT facilities. At present, CICT is the only South Asia’s terminal that provide a state of the art facility, equipped to handle the largest vessel’s afloat.
+" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

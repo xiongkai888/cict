@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            style="@style/text"
+            android:src="@mipmap/icon_phone" />
+
+
+        <com.xson.common.widget.DrawClickableEditText
+            android:id="@+id/phone_et"
+            style="@style/editText_bottom_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:hint="Cell-phone number "
+            android:inputType="phone"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            style="@style/text"
+            android:src="@mipmap/icon_pwd" />
+
+
+        <LinearLayout
+            style="@style/ll_bottom_h"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+
+            <com.xson.common.widget.DrawClickableEditText
+                android:id="@+id/pwd_et"
+                style="@style/editText_bottom_style"
+                android:layout_marginRight="@dimen/d_15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="18" />
+
+            <ImageView
+                android:id="@+id/showPwd_iv"
+                style="@style/text"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/pwd_off" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/forgotPwd_tv"
+        style="@style/text12color666"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:layout_marginTop="@dimen/d_12dp"
+        android:text="Forget password？" />
+
+    <Button
+        android:id="@+id/login_bt"
+        style="@style/button_style"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/d_50dp"
+        android:text="@string/sub" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
