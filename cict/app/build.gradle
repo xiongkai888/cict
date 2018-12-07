@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.lanmei.cict"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_URL", "\"http://47.107.59.111/api/\""
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.startsWith('app-release')) {
+                def fileName = outputFile.name.replace("app-release", "cict_vc${defaultConfig.versionCode}_vn${defaultConfig.versionName}_${buildTime()}")
+                outputFileName = fileName
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'cict'
+            keyPassword 'lanmei888'
+            storeFile file('cict.jks')
+            storePassword 'lanmei888'
+        }
+    }
+
+}
+
+def buildTime() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(path: ':common')
+    implementation project(':wheel-date-picker')
+
+    //轮播图
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    //VerticalTabLayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+
+    //九宫格
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    implementation 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+}
