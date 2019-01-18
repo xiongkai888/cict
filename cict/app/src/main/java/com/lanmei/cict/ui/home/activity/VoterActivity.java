@@ -103,7 +103,7 @@ public class VoterActivity extends BaseActivity {
 
     private List<VoterTabBean> getVoterTabList() {
         List<VoterTabBean> list = new ArrayList<>();
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 4; i++) {
             VoterTabBean bean = new VoterTabBean();
             switch (i){
                 case 0:
